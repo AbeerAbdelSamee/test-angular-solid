@@ -1,0 +1,11 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>new-dream</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <h1> add new Dream /nightmares </h1>
+    <ion-input [(ngModel)]="dream.name" placeholder="type your dream" type="text"></ion-input>
+    <ion-button (click)="addNewDream()"> Save</ion-button>
+</ion-content>

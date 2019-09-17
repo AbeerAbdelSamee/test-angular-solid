@@ -1,0 +1,14 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>All Dreams</ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+    <ion-list *ngFor="let item of dreamsList">
+        <ion-item (click)="showDetail(item)">
+            <h1> {{item?.name}}</h1>
+        </ion-item>
+    </ion-list>
+    <ion-button (click)="goToaddNewDream()"> Add new Dream</ion-button>
+</ion-content>
